@@ -1,0 +1,315 @@
+api-gateway_CreateRestApi:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client.sh
+  services: 
+    api-gateway: { CreateRestApi }
+api-gateway_CreateResource:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource.sh
+  services: 
+    api-gateway: { CreateResource }
+api-gateway_PutMethod:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get.sh
+  services: 
+    api-gateway: { PutMethod }
+api-gateway_PutMethodResponse:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get_response.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get_response.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get_response.sh
+  services: 
+    api-gateway: { PutMethodResponse }
+api-gateway_TestInvokeMethod:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get_test.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get_test.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_get_test.sh
+  services: 
+    api-gateway: { TestInvokeMethod }
+api-gateway_PutIntegration:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_http.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_http.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_http.sh
+  services: 
+    api-gateway: { PutIntegration }
+api-gateway_PutIntegrationResponse:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_http_response.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_http_response.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_http_response.sh
+  services: 
+    api-gateway: { PutIntegrationResponse }
+api-gateway_CreateIntegration:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_deploy_stage.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_deploy_stage.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_deploy_stage.sh
+  services: 
+    api-gateway: { CreateIntegration }
+api-gateway_GettingStarted_Complete:
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client.js
+                - apigateway_getting_started/create_api_client_resource.js
+                - apigateway_getting_started/create_api_client_resource_get.js
+                - apigateway_getting_started/create_api_client_resource_get_response.js
+                - apigateway_getting_started/create_api_client_resource_get_test.js
+                - apigateway_getting_started/create_api_client_resource_http_response.js
+                - apigateway_getting_started/create_api_client_resource_http.js
+                - apigateway_getting_started/create_api_client_resource_child.js
+                - apigateway_getting_started/create_api_client_resource_child_get.js
+                - apigateway_getting_started/create_api_client_resource_child_get_response.js
+                - apigateway_getting_started/create_api_client_resource_child_get_test.js
+                - apigateway_getting_started/create_api_client_resource_child_http.js
+                - apigateway_getting_started/create_api_client_resource_child_http_response.js
+                - apigateway_getting_started/create_api_client_deploy_stage.js
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client.py
+                - apigateway_getting_started/create_api_client_resource.py
+                - apigateway_getting_started/create_api_client_resource_get.py
+                - apigateway_getting_started/create_api_client_resource_get_response.py
+                - apigateway_getting_started/create_api_client_resource_get_test.py
+                - apigateway_getting_started/create_api_client_resource_http_response.py
+                - apigateway_getting_started/create_api_client_resource_http.py
+                - apigateway_getting_started/create_api_client_resource_child.py
+                - apigateway_getting_started/create_api_client_resource_child_get.py
+                - apigateway_getting_started/create_api_client_resource_child_get_response.py
+                - apigateway_getting_started/create_api_client_resource_child_get_test.py
+                - apigateway_getting_started/create_api_client_resource_child_http_response.py
+                - apigateway_getting_started/create_api_client_resource_child_http.py
+                - apigateway_getting_started/create_api_client_deploy_stage.py
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client.sh
+                - apigateway_getting_started/create_api_client_resource.sh
+                - apigateway_getting_started/create_api_client_resource_get.sh
+                - apigateway_getting_started/create_api_client_resource_get_response.sh
+                - apigateway_getting_started/create_api_client_resource_get_test.sh
+                - apigateway_getting_started/create_api_client_resource_http_response.sh
+                - apigateway_getting_started/create_api_client_resource_http.sh
+                - apigateway_getting_started/create_api_client_resource_child.sh
+                - apigateway_getting_started/create_api_client_resource_child_get.sh
+                - apigateway_getting_started/create_api_client_resource_child_get_response.sh
+                - apigateway_getting_started/create_api_client_resource_child_get_test.sh
+                - apigateway_getting_started/create_api_client_resource_child_http.sh
+                - apigateway_getting_started/create_api_client_resource_child_http_response.sh
+                - apigateway_getting_started/create_api_client_deploy_stage.sh
+    CloudFormation:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_template.yaml
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_complete.tf
+  services: 
+    api-gateway: { "GettingStarted" }
+# getting_started_lambda.js
+# getting_started_lambda.py
+# how_to_cors.js
+# how_to_cors.py
+# how_to_encodings.js
+# how_to_encodings.py
+# http_api_lambda_auth.js
+# http_api_lambda_auth.py
+# http_api_lambda_auth_iam.js
+# http_api_lambda_auth_iam.py
+# invoke_websocket_api.js
+# lambda_proxy_integration.js
+# lambda_proxy_integration.py
