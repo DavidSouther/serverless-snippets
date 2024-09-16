@@ -1,0 +1,1 @@
+aws apigateway create-rest-api --name 'Simple PetStore (&AWS; CLI)' --region us-west-2
