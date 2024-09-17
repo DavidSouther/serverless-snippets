@@ -287,17 +287,17 @@ api-gateway_GettingStarted_Complete:
                 - apigateway_getting_started/create_api_client_resource_child_http.sh
                 - apigateway_getting_started/create_api_client_resource_child_http_response.sh
                 - apigateway_getting_started/create_api_client_deploy_stage.sh
-    CloudFormation:
-      versions:
-        - sdk_version: 2
-          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
-          excerpts:
-            - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_template.yaml
-            - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_complete.tf
+    # CloudFormation:
+    #   versions:
+    #     - sdk_version: 2
+    #       github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+    #       excerpts:
+    #         - description:
+    #           snippet_files:
+    #             - apigateway_getting_started/create_api_client_template.yaml
+    #         - description:
+    #           snippet_files:
+    #             - apigateway_getting_started/create_api_client_complete.tf
   services: 
     api-gateway: { "GettingStarted" }
 # getting_started_lambda.js
