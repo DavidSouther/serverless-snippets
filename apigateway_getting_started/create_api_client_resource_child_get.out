@@ -1,0 +1,8 @@
+{
+    "apiKeyRequired": false, 
+    "httpMethod": "GET", 
+    "authorizationType": "NONE",
+    "requestParameters": {
+       "method.request.path.petId": true
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "path": "/pets/{petId}", 
+    "pathPart": "{petId}", 
+    "id": "bbb222", 
+    "parentId": "aaa111'"
+}

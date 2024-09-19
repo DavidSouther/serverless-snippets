@@ -1,0 +1,9 @@
+{
+  id: 'abc1234',
+  name: 'PetStore (JavaScript v3 SDK)',
+  description: 'Demo API created using the &AWS; SDK for node.js',
+  createdDate: 2017-09-05T19:32:35.000Z,
+  version: '0.00.001',
+  rootResourceId: 'efg567'
+  binaryMediaTypes: [ '*' ] 
+}
