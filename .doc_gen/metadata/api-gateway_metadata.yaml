@@ -11,7 +11,7 @@ api-gateway_CreateRestApi_getting-started:
                 - apigateway_getting_started/create_api_client.js
             - description: "A successful call returns your API ID and the root resource ID of your API in an output like the following:"
               snippet_files:
-                - apigateway_getting_started/create_api_client.js.out
+                - apigateway_getting_started/create_api_client.out
     Python:
       versions:
         - sdk_version: 3
@@ -22,7 +22,7 @@ api-gateway_CreateRestApi_getting-started:
                 - apigateway_getting_started/create_api_client.py
             - description: "A successful call returns your API ID and the root resource ID of your API in an output like the following:"
               snippet_files:
-                - apigateway_getting_started/create_api_client.py.out
+                - apigateway_getting_started/create_api_client.out
     Bash:
       versions:
         - sdk_version: 2
@@ -33,7 +33,7 @@ api-gateway_CreateRestApi_getting-started:
                 - apigateway_getting_started/create_api_client.sh
             - description: "The following is the output of this command:"
               snippet_files:
-                - apigateway_getting_started/create_api_client.sh.out
+                - apigateway_getting_started/create_api_client.out
   services: 
     api-gateway: { CreateRestApi }
 api-gateway_CreateResource_getting-started:
