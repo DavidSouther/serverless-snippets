@@ -1,3 +1,4 @@
+# snippet-start:[apigateway_getting_started.cloudformation]
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Api:
@@ -61,3 +62,4 @@ Outputs:
   ApiRootUrl:
     Description: Root Url of the API
     Value: !Sub "https://${Api}.execute-api.${AWS::Region}.amazonaws.com/Prod"
+# snippet-end:[apigateway_getting_started.cloudformation]

@@ -1,3 +1,4 @@
+# snippet-start:[apigateway_getting_started.terraform]
 provider "aws" {
   region = "us-east-1" # Update with your desired region
 }
@@ -92,3 +93,4 @@ resource "aws_api_gateway_stage" "Stage" {
   rest_api_id   = aws_api_gateway_rest_api.Api.id
   deployment_id = aws_api_gateway_deployment.Deployment.id
 }
+# snippet-end:[apigateway_getting_started.terraform]
