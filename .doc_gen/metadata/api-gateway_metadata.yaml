@@ -7,8 +7,8 @@ api-gateway_CreateRestApi_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client
             - description: "A successful call returns your API ID and the root resource ID of your API in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client.out
@@ -18,8 +18,8 @@ api-gateway_CreateRestApi_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client
             - description: "A successful call returns your API ID and the root resource ID of your API in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client.out
@@ -45,8 +45,9 @@ api-gateway_CreateResource_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource
+                - apigateway_getting_started.javascript.create_api_client_resource.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource.out
@@ -56,8 +57,9 @@ api-gateway_CreateResource_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource
+                - apigateway_getting_started.python.create_api_client_resource.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource.out
@@ -87,8 +89,9 @@ api-gateway_CreateResource_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_child.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource
+                - apigateway_getting_started.javascript.create_api_client_resource.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_child.out
@@ -98,8 +101,9 @@ api-gateway_CreateResource_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_child.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource
+                - apigateway_getting_started.python.create_api_client_resource.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_child.out
@@ -130,8 +134,8 @@ api-gateway_PutMethod_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_get
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get.out
@@ -141,8 +145,8 @@ api-gateway_PutMethod_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_get
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get.out
@@ -168,8 +172,9 @@ api-gateway_PutMethodResponse_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get_response.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_get_response
+                - apigateway_getting_started.javascript.create_api_client_resource_get_response.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get_response.out
@@ -179,8 +184,9 @@ api-gateway_PutMethodResponse_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get_response.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_get_response
+                - apigateway_getting_started.python.create_api_client_resource_get_response.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get_response.out
@@ -197,6 +203,47 @@ api-gateway_PutMethodResponse_getting-started:
                 - apigateway_getting_started/create_api_client_resource_get_response.out
   services: 
     api-gateway: { PutMethodResponse }
+api-gateway_PutMethod_getting-started_child:
+  synopsis: "Use the following example to add the <code>GET /pets/{petId}</code> method:"
+  category: ChildResource
+  languages:
+    JavaScript:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_get
+                - apigateway_getting_started.javascript.create_api_client_resource_get.child_call
+            - description: "A successful call returns information about your resource in an output like the following:"
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_child_get.out
+    Python:
+      versions:
+        - sdk_version: 3
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_get
+                - apigateway_getting_started.python.create_api_client_resource_get.child_call
+            - description: "A successful call returns information about your resource in an output like the following:"
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_child_get.out
+    Bash:
+      versions:
+        - sdk_version: 2
+          github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
+          excerpts:
+            - description:
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_child_get.sh
+            - description: "A successful call returns information about your resource in an output like the following:"
+              snippet_files:
+                - apigateway_getting_started/create_api_client_resource_child_get.out
+  services: 
+    api-gateway: { PutMethod }
 api-gateway_PutMethodResponse_getting-started_child:
   synopsis: "Use the following example to add the 200 OK method response for the <code>GET /pets/{petId}</code> method:"
   category: ChildResource
@@ -207,8 +254,9 @@ api-gateway_PutMethodResponse_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_child_get_response.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_get_response
+                - apigateway_getting_started.javascript.create_api_client_resource_get_response.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_child_get_response.out
@@ -218,8 +266,9 @@ api-gateway_PutMethodResponse_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_child_get_response.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_get_response
+                - apigateway_getting_started.python.create_api_client_resource_get_response.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_child_get_response.out
@@ -245,8 +294,9 @@ api-gateway_TestInvokeMethod_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get_test.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_get_test
+                - apigateway_getting_started.javascript.create_api_client_resource_get_test.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get_test.out
@@ -256,8 +306,9 @@ api-gateway_TestInvokeMethod_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get_test.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_get_test
+                - apigateway_getting_started.python.create_api_client_resource_get_test.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get_test.out
@@ -284,8 +335,9 @@ api-gateway_TestInvokeMethod_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get_test.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_get_test
+                - apigateway_getting_started.javascript.create_api_client_resource_get_test.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_child_get_test.out
@@ -295,8 +347,9 @@ api-gateway_TestInvokeMethod_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_get_test.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_get_test
+                - apigateway_getting_started.python.create_api_client_resource_get_test.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_get_test.out
@@ -325,8 +378,9 @@ api-gateway_PutIntegration_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_http
+                - apigateway_getting_started.javascript.create_api_client_resource_http.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http.out
@@ -336,8 +390,9 @@ api-gateway_PutIntegration_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_http
+                - apigateway_getting_started.python.create_api_client_resource_http.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http.out
@@ -367,8 +422,9 @@ api-gateway_PutIntegration_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_http
+                - apigateway_getting_started.javascript.create_api_client_resource_http.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http.out
@@ -378,8 +434,9 @@ api-gateway_PutIntegration_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_http
+                - apigateway_getting_started.python.create_api_client_resource_http.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http.out
@@ -405,8 +462,9 @@ api-gateway_PutIntegrationResponse_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http_response.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_http_response
+                - apigateway_getting_started.javascript.create_api_client_resource_http_response.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http_response.out
@@ -416,8 +474,9 @@ api-gateway_PutIntegrationResponse_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http_response.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_http_response
+                - apigateway_getting_started.python.create_api_client_resource_http_response.parent_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http_response.out
@@ -444,8 +503,9 @@ api-gateway_PutIntegrationResponse_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http_response.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_resource_http_response
+                - apigateway_getting_started.javascript.create_api_client_resource_http_response.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http_response.out
@@ -455,8 +515,9 @@ api-gateway_PutIntegrationResponse_getting-started_child:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_resource_http_response.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_resource_http_response
+                - apigateway_getting_started.python.create_api_client_resource_http_response.child_call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_resource_http_response.out
@@ -482,8 +543,9 @@ api-gateway_CreateDeployment_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_deploy_stage.js
+              snippet_tags:
+                - apigateway_getting_started.javascript.create_api_client_deploy_stage
+                - apigateway_getting_started.javascript.create_api_client_deploy_stage.call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_deploy_stage.out
@@ -493,8 +555,9 @@ api-gateway_CreateDeployment_getting-started:
           github: https://github.com/aws-samples/serverless-snippets/tree/main/apigateway_getting_started
           excerpts:
             - description:
-              snippet_files:
-                - apigateway_getting_started/create_api_client_deploy_stage.py
+              snippet_tags:
+                - apigateway_getting_started.python.create_api_client_deploy_stage
+                - apigateway_getting_started.python.create_api_client_deploy_stage.call
             - description: "A successful call returns information about your resource in an output like the following:"
               snippet_files:
                 - apigateway_getting_started/create_api_client_deploy_stage.out
@@ -521,19 +584,6 @@ api-gateway_Complete_getting-started:
             - description:
               snippet_files:
                 - apigateway_getting_started/create_api_client.js
-                - apigateway_getting_started/create_api_client_resource.js
-                - apigateway_getting_started/create_api_client_resource_get.js
-                - apigateway_getting_started/create_api_client_resource_get_response.js
-                - apigateway_getting_started/create_api_client_resource_get_test.js
-                - apigateway_getting_started/create_api_client_resource_http_response.js
-                - apigateway_getting_started/create_api_client_resource_http.js
-                - apigateway_getting_started/create_api_client_resource_child.js
-                - apigateway_getting_started/create_api_client_resource_child_get.js
-                - apigateway_getting_started/create_api_client_resource_child_get_response.js
-                - apigateway_getting_started/create_api_client_resource_child_get_test.js
-                - apigateway_getting_started/create_api_client_resource_child_http.js
-                - apigateway_getting_started/create_api_client_resource_child_http_response.js
-                - apigateway_getting_started/create_api_client_deploy_stage.js
     Python:
       versions:
         - sdk_version: 3
@@ -542,19 +592,6 @@ api-gateway_Complete_getting-started:
             - description:
               snippet_files:
                 - apigateway_getting_started/create_api_client.py
-                - apigateway_getting_started/create_api_client_resource.py
-                - apigateway_getting_started/create_api_client_resource_get.py
-                - apigateway_getting_started/create_api_client_resource_get_response.py
-                - apigateway_getting_started/create_api_client_resource_get_test.py
-                - apigateway_getting_started/create_api_client_resource_http_response.py
-                - apigateway_getting_started/create_api_client_resource_http.py
-                - apigateway_getting_started/create_api_client_resource_child.py
-                - apigateway_getting_started/create_api_client_resource_child_get.py
-                - apigateway_getting_started/create_api_client_resource_child_get_response.py
-                - apigateway_getting_started/create_api_client_resource_child_get_test.py
-                - apigateway_getting_started/create_api_client_resource_child_http_response.py
-                - apigateway_getting_started/create_api_client_resource_child_http.py
-                - apigateway_getting_started/create_api_client_deploy_stage.py
     Bash:
       versions:
         - sdk_version: 2
