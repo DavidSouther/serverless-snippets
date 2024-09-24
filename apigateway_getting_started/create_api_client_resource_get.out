@@ -1,0 +1,5 @@
+{
+    "apiKeyRequired": false, 
+    "httpMethod": "GET", 
+    "authorizationType": "NONE"
+}

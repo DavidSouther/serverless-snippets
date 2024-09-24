@@ -1,0 +1,11 @@
+{
+    "httpMethod": "GET", 
+    "passthroughBehavior": "WHEN_NO_MATCH", 
+    "cacheKeyParameters": [], 
+    "type": "HTTP", 
+    "uri": "http://petstore-demo-endpoint.execute-api.com/petstore/pets/{id}", 
+    "cacheNamespace": "ddd444",
+    "requestParameters": {
+       "integration.request.path.id": "method.request.path.petId"
+    }
+}

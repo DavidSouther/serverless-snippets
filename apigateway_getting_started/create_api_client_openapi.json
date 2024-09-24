@@ -1,0 +1,78 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Simple PetStore (OpenAPI)",
+    "description": "Demo API created using OpenAPI",
+    "version": "2024-05-24T20:39:34Z"
+  },
+  "servers": [
+    {
+      "url": "{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "Prod"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/pets": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "content": {}
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "type": "http",
+          "httpMethod": "GET",
+          "uri": "http://petstore-demo-endpoint.execute-api.com/petstore/pets",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "timeoutInMillis": 29000
+        }
+      }
+    },
+    "/pets/{petId}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "petId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "content": {}
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "type": "http",
+          "httpMethod": "GET",
+          "uri": "http://petstore-demo-endpoint.execute-api.com/petstore/pets/{id}",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "requestParameters": {
+            "integration.request.path.id": "method.request.path.petId"
+          },
+          "passthroughBehavior": "when_no_match",
+          "timeoutInMillis": 29000
+        }
+      }
+    }
+  },
+  "components": {}
+}

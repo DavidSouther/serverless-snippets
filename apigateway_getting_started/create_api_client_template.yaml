@@ -1,0 +1,65 @@
+# snippet-start:[apigateway_getting_started.cloudformation]
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  Api:
+    Type: "AWS::ApiGateway::RestApi"
+    Properties:
+      Name: Simple PetStore (AWS CloudFormation)
+  PetsResource:
+    Type: "AWS::ApiGateway::Resource"
+    Properties:
+      RestApiId: !Ref Api
+      ParentId: !GetAtt Api.RootResourceId
+      PathPart: "pets"
+  PetIdResource:
+    Type: "AWS::ApiGateway::Resource"
+    Properties:
+      RestApiId: !Ref Api
+      ParentId: !Ref PetsResource
+      PathPart: "{petId}"
+  PetsMethodGet:
+    Type: "AWS::ApiGateway::Method"
+    Properties:
+      RestApiId: !Ref Api
+      ResourceId: !Ref PetsResource
+      HttpMethod: GET
+      AuthorizationType: NONE
+      Integration:
+        Type: HTTP
+        IntegrationHttpMethod: GET
+        Uri: http://petstore-demo-endpoint.execute-api.com/petstore/pets/
+        IntegrationResponses:
+          - StatusCode: "200"
+      MethodResponses:
+        - StatusCode: "200"
+  PetIdMethodGet:
+    Type: "AWS::ApiGateway::Method"
+    Properties:
+      RestApiId: !Ref Api
+      ResourceId: !Ref PetIdResource
+      HttpMethod: GET
+      AuthorizationType: NONE
+      RequestParameters:
+        method.request.path.petId: true
+      Integration:
+        Type: HTTP
+        IntegrationHttpMethod: GET
+        Uri: http://petstore-demo-endpoint.execute-api.com/petstore/pets/{id}
+        RequestParameters:
+          integration.request.path.id: method.request.path.petId
+        IntegrationResponses:
+          - StatusCode: "200"
+      MethodResponses:
+        - StatusCode: "200"
+  ApiDeployment:
+    Type: "AWS::ApiGateway::Deployment"
+    DependsOn:
+      - PetsMethodGet
+    Properties:
+      RestApiId: !Ref Api
+      StageName: Prod
+Outputs:
+  ApiRootUrl:
+    Description: Root Url of the API
+    Value: !Sub "https://${Api}.execute-api.${AWS::Region}.amazonaws.com/Prod"
+# snippet-end:[apigateway_getting_started.cloudformation]
