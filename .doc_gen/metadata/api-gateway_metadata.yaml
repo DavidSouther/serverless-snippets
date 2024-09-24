@@ -77,6 +77,7 @@ api-gateway_CreateResource_getting-started:
   services: 
     api-gateway: { CreateResource }
 api-gateway_CreateResource_getting-started_child:
+  title: Add a child resource
   synopsis: |
     The following example adds the <code>GET</code> HTTP method on the <code>/pets/{petId}</code>
     resource and sets the <code>requestParameters</code> property to pass the client-supplied
@@ -204,6 +205,7 @@ api-gateway_PutMethodResponse_getting-started:
   services: 
     api-gateway: { PutMethodResponse }
 api-gateway_PutMethod_getting-started_child:
+  title: Add a GET method on the child resource
   synopsis: "Use the following example to add the <code>GET /pets/{petId}</code> method:"
   category: ChildResource
   languages:
@@ -245,6 +247,7 @@ api-gateway_PutMethod_getting-started_child:
   services: 
     api-gateway: { PutMethod }
 api-gateway_PutMethodResponse_getting-started_child:
+  title: Add a response to the child resource
   synopsis: "Use the following example to add the 200 OK method response for the <code>GET /pets/{petId}</code> method:"
   category: ChildResource
   languages:
@@ -326,6 +329,7 @@ api-gateway_TestInvokeMethod_getting-started:
   services: 
     api-gateway: { TestInvokeMethod }
 api-gateway_TestInvokeMethod_getting-started_child:
+  title: Test the response from the child resource
   synopsis: "The following example tests the <code>GET /pets/{petId}</code> method with a <code>petId</code> of 3:"
   category: ChildResource
   languages:
@@ -410,6 +414,7 @@ api-gateway_PutIntegration_getting-started:
   services: 
     api-gateway: { PutIntegration }
 api-gateway_PutIntegration_getting-started_child:
+  title: Attach the child resource to an HTTP endpoint
   synopsis: |
     The following example configures an integration for the <code>GET /pets/{id}</code>
     method with an HTTP endpoint. The HTTP endpoint is
@@ -494,6 +499,7 @@ api-gateway_PutIntegrationResponse_getting-started:
   services: 
     api-gateway: { PutIntegrationResponse }
 api-gateway_PutIntegrationResponse_getting-started_child:
+  title: Set the response for the attached child resource
   synopsis: "Use the following example to add the 200 OK method response for the <code>GET /pets/{petId}</code> method:"
   category: ChildResource
   languages:
